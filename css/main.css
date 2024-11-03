@@ -2,15 +2,15 @@
     /* Light Theme */
     --bg-light: #ffffff;
     --text-light: #2d3436;
-    --primary-light: #0984e3;
-    --secondary-light: #00b894;
-    --card-light: #f5f6fa;
+    --primary-light: #6b5ce6;    /* Deep Purple */
+    --secondary-light: #3b82f6;  /* Electric Blue */
+    --card-light: #f8fafc;
     
     /* Dark Theme */
     --bg-dark: #1a1a1a;
-    --text-dark: #dfe6e9;
-    --primary-dark: #74b9ff;
-    --secondary-dark: #00cec9;
+    --text-dark: #e2e8f0;
+    --primary-dark: #a78bfa;     /* Lighter Purple */
+    --secondary-dark: #60a5fa;   /* Lighter Blue */
     --card-dark: #2d3436;
 }
 
@@ -41,7 +41,7 @@ body.dark-mode {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    background: linear-gradient(135deg, #6b5ce6 0%, #3b82f6 100%);
     position: relative;
     overflow: hidden;
 }
@@ -146,5 +146,5 @@ main {
 
 /* Dark mode adjustment */
 .dark-mode .hero {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2c3e50 100%);
+    background: linear-gradient(135deg, #7c3aed 0%, #60a5fa 100%);
 }

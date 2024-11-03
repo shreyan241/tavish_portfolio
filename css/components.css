@@ -32,7 +32,7 @@
 
 /* Sun styles */
 .sun {
-    color: #ffd700;
+    color: #fbbf24;
     opacity: 1;
     transform: scale(1) rotate(0);
 }
@@ -45,7 +45,7 @@
 
 /* Moon styles */
 .moon {
-    color: white;
+    color: #e2e8f0;
     opacity: 0;
     transform: scale(0) rotate(90deg);
 }
@@ -545,16 +545,16 @@
     /* Light Theme */
     --bg-light: #ffffff;
     --text-light: #2d3436;
-    --primary-light: #0984e3;
-    --secondary-light: #00b894;
+    --primary-light: #6b5ce6;
+    --secondary-light: #2dd4bf;
     --accent-light: #6c5ce7;
-    --card-light: #f5f6fa;
+    --card-light: #f8fafc;
     
     /* Dark Theme */
     --bg-dark: #1a1a1a;
-    --text-dark: #dfe6e9;
-    --primary-dark: #74b9ff;
-    --secondary-dark: #00cec9;
+    --text-dark: #e2e8f0;
+    --primary-dark: #a78bfa;
+    --secondary-dark: #5eead4;
     --accent-dark: #a29bfe;
     --card-dark: #2d3436;
 }
@@ -687,7 +687,7 @@
 
 /* Light mode states */
 .tab-btn:hover {
-    background-color: rgba(9, 132, 227, 0.1);
+    background-color: rgba(107, 92, 230, 0.1);
 }
 
 .tab-btn.active {
@@ -697,7 +697,7 @@
 
 /* Dark mode states */
 .dark-mode .tab-btn:hover {
-    background-color: rgba(116, 185, 255, 0.1);
+    background-color: rgba(167, 139, 250, 0.1);
 }
 
 .dark-mode .tab-btn.active {
