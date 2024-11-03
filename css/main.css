@@ -148,3 +148,21 @@ main {
 .dark-mode .hero {
     background: linear-gradient(135deg, #7c3aed 0%, #60a5fa 100%);
 }
+
+/* Mobile fixes for hero section */
+@media screen and (max-width: 480px) {
+    .hero {
+        height: 30vh; /* Shorter height for mobile */
+        min-height: 200px; /* Ensure minimum height */
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+}
