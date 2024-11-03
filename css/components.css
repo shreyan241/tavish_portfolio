@@ -791,3 +791,146 @@
 .cv-button:hover {
     transform: translateY(-2px);
 }
+
+/* Base responsive settings */
+:root {
+    --container-width: min(1200px, 90%);
+    --card-padding: clamp(1rem, 3vw, 2rem);
+    --section-spacing: clamp(2rem, 5vw, 4rem);
+}
+
+/* Responsive Grid Layouts */
+.publications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+    gap: 2rem;
+}
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        padding: 0 0 0 50px !important; /* Override both odd and even padding */
+    }
+
+    .timeline-image {
+        position: relative !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        margin-top: 1rem;
+    }
+
+    .timeline-content {
+        width: 100%;
+    }
+}
+
+/* Responsive Navigation */
+@media (max-width: 600px) {
+    .nav-tabs {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .tab-btn {
+        flex: 1 1 calc(50% - 0.5rem);
+        min-width: 120px;
+    }
+}
+
+/* Responsive Profile Card */
+@media (max-width: 768px) {
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 1.5rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Responsive Experience Cards */
+@media (max-width: 768px) {
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-item {
+        padding: var(--card-padding);
+    }
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: clamp(2rem, 8vw, 3.5rem);
+    }
+
+    .subtitle {
+        font-size: clamp(1rem, 4vw, 1.2rem);
+    }
+
+    .section-title {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+}
+
+/* Theme Switch Position */
+@media (max-width: 768px) {
+    .theme-switch-wrapper {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+/* Main Container Padding */
+@media (max-width: 768px) {
+    main {
+        padding: var(--card-padding);
+    }
+}
+
+/* Card Styles */
+@media (max-width: 768px) {
+    .card {
+        padding: var(--card-padding);
+    }
+}
+
+/* List Spacing */
+@media (max-width: 768px) {
+    .achievement-list li,
+    .experience-details li {
+        margin-bottom: 0.8rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* Button Sizes */
+@media (max-width: 768px) {
+    .cv-button,
+    .read-more {
+        width: 100%;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+
+/* Dark Mode Adjustments */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Add any specific dark mode values for mobile */
+    }
+}
